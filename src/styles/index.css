@@ -1,7 +1,7 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -24,4 +24,11 @@ div {
     background-color: #fbfce0;
     /* opacity: 0.3; */
     background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #fbfce0 40px ), repeating-linear-gradient( #5d925a55, #5d925a );
+}
+
+.content {
+    margin: auto;
+    width: 50%;
+    padding: 50px 10px;
+    text-align: center;
 }

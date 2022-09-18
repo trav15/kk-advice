@@ -1,15 +1,18 @@
 import * as React from "react"
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import "../styles/index.css"
 import { advice } from '../../public/static/advice.js';
 
 const IndexPage = () => {
   const [currentQuote, setCurrentQuote] = useState(advice[Math.floor(Math.random() * advice.length)]);
 
-  const randomQuote = (e) => { 
-    e.preventDefault();
+  const randomQuote = () => { 
     setCurrentQuote(advice[Math.floor(Math.random() * advice.length)]);
    }
+
+   useEffect(() => {
+    randomQuote();
+  }, [])
 
   return (
     <div className="main">
