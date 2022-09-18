@@ -1,0 +1,27 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+* {
+    box-sizing: border-box;
+}
+
+div {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.main {
+    background-color: #fbfce0;
+    /* opacity: 0.3; */
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #fbfce0 40px ), repeating-linear-gradient( #5d925a55, #5d925a );
+}
